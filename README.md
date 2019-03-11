@@ -1,9 +1,11 @@
 Using the playbook:
 =============
 
-Change the password of the vnc server in the vnc/vars/main.yml file
+Run command:
 
-Default host is "vnc-server"
+```sh
+ansible-playbook --extra-vars="default_passwd=custompassword" simple.yml
+```
 
 
 
