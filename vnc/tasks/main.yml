@@ -1,7 +1,9 @@
----
+---  
  - name: Install the GUI and VNC Packages
-   apt: pkg={{ item }} state=installed update_cache=true
-   with_items:
+   apt:
+     state: present
+     update_cache: yes
+     pkg:
      - xfce4
      - xfce4-goodies
      - tightvncserver
